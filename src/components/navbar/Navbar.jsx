@@ -1,10 +1,18 @@
 import React from 'react'
 
-import './navbar.scss'
+import './Navbar.scss'
+import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined"
 
 const Navbar = () => {
   return (
-    <div className='navbar'>Navbar</div>
+    <div className='navbar'>
+      <div className='wrapper'>
+        <div className='search'>
+          <input type='text' placeholder='Search....' />
+          <SearchOutlinedIcon />
+        </div>
+      </div>
+    </div>
   )
 }
 
