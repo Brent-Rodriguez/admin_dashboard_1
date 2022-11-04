@@ -47,6 +47,10 @@ const Sidebar = () => {
             <span>Stats</span>
           </li>
           <li>
+          <WebStoriesIcon className='icon'/>
+            <span>Reports</span>
+          </li>
+          <li>
           <NotificationsActiveIcon className='icon'/>
             <span>Notifications</span>
           </li>
@@ -55,10 +59,6 @@ const Sidebar = () => {
           <li>
           <MonitorHeartIcon className='icon'/>
             <span>System Health</span>
-          </li>
-          <li>
-          <WebStoriesIcon className='icon'/>
-            <span>Reports</span>
           </li>
           <li>
           <SettingsIcon className='icon'/>

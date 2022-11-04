@@ -50,7 +50,7 @@ export const Widget = ({ type }) => {
       data = {
         title: "Return Travel",
         isMoney: true,
-        link: "View Late Travelers",
+        link: "View Returned Travelers",
         icon: (
         <FlightLandIcon 
         className='icon' 
