@@ -2,7 +2,6 @@ import React from 'react'
 
 import './Navbar.scss'
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined"
-import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined"
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined"
 import FullscreenExitOutlinedIcon from "@mui/icons-material/FullscreenExitOutlined"
 import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined"
@@ -18,11 +17,6 @@ const Navbar = () => {
           <SearchOutlinedIcon />
         </div>
         <div className='items'>
-          <div className='item'>
-          {/* As some of these icons are just ideas - plan to remove them */}
-            <LanguageOutlinedIcon className='icon'/>
-            English
-          </div>
           <div className='item'>
             <DarkModeOutlinedIcon className='icon'/>
           </div>

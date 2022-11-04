@@ -1,23 +1,24 @@
 import React from 'react'
 
 import './Sidebar.scss'
+import ExploreIcon from '@mui/icons-material/Explore';
 import DashboardIcon from '@mui/icons-material/Dashboard'
-import PeopleOutlineIcon from '@mui/icons-material/PeopleOutline';
-import LocalGroceryStoreOutlinedIcon from '@mui/icons-material/LocalGroceryStoreOutlined';
-import CreditCardOutlinedIcon from '@mui/icons-material/CreditCardOutlined';
-import LocalShippingOutlinedIcon from '@mui/icons-material/LocalShippingOutlined';
+import GroupIcon from '@mui/icons-material/Group';
+import FlightTakeoffIcon from '@mui/icons-material/FlightTakeoff';
+import ApartmentIcon from '@mui/icons-material/Apartment';
 import QueryStatsOutlinedIcon from '@mui/icons-material/QueryStatsOutlined';
-import NotificationsActiveOutlinedIcon from '@mui/icons-material/NotificationsActiveOutlined';
-import MonitorHeartOutlinedIcon from '@mui/icons-material/MonitorHeartOutlined';
-import WebStoriesOutlinedIcon from '@mui/icons-material/WebStoriesOutlined';
-import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
-import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
+import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
+import MonitorHeartIcon from '@mui/icons-material/MonitorHeart';
+import WebStoriesIcon from '@mui/icons-material/WebStories';
+import SettingsIcon from '@mui/icons-material/Settings';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
 
 const Sidebar = () => {
   return (
     <div className='sidebar'>
       <div className='top'>
+        <ExploreIcon className='icon' />
         <span className='logo'>Exodus Admin</span>
       </div>
       <hr/>
@@ -30,47 +31,42 @@ const Sidebar = () => {
           </li>
           <p className='title'> List</p>
           <li>
-          <PeopleOutlineIcon className='icon'/>
+          <GroupIcon className='icon'/>
             <span>Users</span>
           </li>
           <li>
-          <LocalGroceryStoreOutlinedIcon className='icon'/>
-            <span>Products</span>
+          <FlightTakeoffIcon className='icon'/>
+            <span>Traveled</span>
           </li>
           <li>
-          <CreditCardOutlinedIcon className='icon'/>
-            <span>Orders</span>
+          <ApartmentIcon className='icon'/>
+            <span>Dorms</span>
           </li>
-          <li>
-          <LocalShippingOutlinedIcon className='icon'/>
-            <span>Delivery</span>
-          </li>
-
-          <p className='title'>Links</p>
+          <p className='title'>Reports</p>
           <li>
           <QueryStatsOutlinedIcon className='icon'/>
             <span>Stats</span>
           </li>
           <li>
-          <NotificationsActiveOutlinedIcon className='icon'/>
+          <NotificationsActiveIcon className='icon'/>
             <span>Notifications</span>
           </li>
 
           <p className='title'> System</p>
           <li>
-          <MonitorHeartOutlinedIcon className='icon'/>
+          <MonitorHeartIcon className='icon'/>
             <span>System Health</span>
           </li>
           <li>
-          <WebStoriesOutlinedIcon className='icon'/>
-            <span>Logs</span>
+          <WebStoriesIcon className='icon'/>
+            <span>Reports</span>
           </li>
           <li>
-          <SettingsOutlinedIcon className='icon'/>
+          <SettingsIcon className='icon'/>
             <span>Settings</span>
           </li>
           <li>
-          <AccountCircleOutlinedIcon className='icon'/>
+          <AccountCircleIcon className='icon'/>
             <span>Profile</span>
           </li>
           <li>
@@ -81,9 +77,6 @@ const Sidebar = () => {
         </ul>
       </div>
       <div className='bottom'>
-        <div className='colorOption'></div>
-        <div className='colorOption'></div>
-        <div className='colorOption'></div>
       </div>
     </div>
   )

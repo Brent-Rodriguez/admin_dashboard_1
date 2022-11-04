@@ -1,10 +1,12 @@
 import React from 'react'
 import './Widget.scss'
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp'
-import PersonOutlineIcon from '@mui/icons-material/PersonOutline'
-import ShoppingCartOutlineIcon from '@mui/icons-material/ShoppingCartOutlined'
-import MonetizationOutlineIcon from '@mui/icons-material/MonetizationOnOutlined'
-import AccountBalanceWalletOutlineIcon from '@mui/icons-material/AccountBalanceWalletOutlined'
+import PersonIcon from '@mui/icons-material/Person'
+import FlightTakeoffIcon from '@mui/icons-material/FlightTakeoff';
+import ApartmentIcon from '@mui/icons-material/Apartment';
+
+import FlightLandIcon from '@mui/icons-material/FlightLand';
+
 
 
 export const Widget = ({ type }) => {
@@ -12,17 +14,17 @@ export const Widget = ({ type }) => {
   let data;
 
   // Temporary Data
-  const amount = 100
+  const traveled = 1000
   const diff = 20
 
   switch (type) {
     case 'user':
       data = {
-        title: "USERS",
+        title: "Users",
         isMoney: false,
         link: "See all users",
         icon: (
-        <PersonOutlineIcon 
+        <PersonIcon 
         className='icon' 
         style={{
           backgroundColor: "rgba(255, 0, 0, 0.2)",
@@ -31,13 +33,13 @@ export const Widget = ({ type }) => {
         />),
       }
       break
-    case 'order':
+    case 'travel':
       data = {
-        title: "ORDERS",
+        title: "Traveled",
         isMoney: false,
-        link: "View all orders",
+        link: "View all Travelers",
         icon: (
-        <ShoppingCartOutlineIcon 
+        <FlightTakeoffIcon
         className='icon' 
         style={{
           backgroundColor: "rgba(218, 165, 32, 0.2)",
@@ -46,13 +48,13 @@ export const Widget = ({ type }) => {
         />),
       }
       break
-    case 'earning':
+    case 'return_travel':
       data = {
-        title: "EARNINGS",
+        title: "Return Travel",
         isMoney: true,
-        link: "View net earnings",
+        link: "View Late Travelers",
         icon: (
-        <MonetizationOutlineIcon 
+        <FlightLandIcon 
         className='icon' 
         style={{
           backgroundColor: "rgba(0, 128, 0, 0.2)",
@@ -61,12 +63,12 @@ export const Widget = ({ type }) => {
         />),
       }
       break
-    case 'balance':
+    case 'dorms':
       data = {
-        title: "BALANCE",
+        title: "Dorm",
         isMoney: true,
-        link: "See all balance",
-        icon: (<AccountBalanceWalletOutlineIcon
+        link: "See all Dorm Residence",
+        icon: (<ApartmentIcon
          className='icon' 
          style={{
           backgroundColor: "rgba(128, 0, 128, 0.2)",
@@ -85,7 +87,7 @@ export const Widget = ({ type }) => {
     <div className='widget'>
       <div className='left'>
         <span className='title'>{data.title}</span>
-        <span className='counter'>{data.isMoney && '$'} {amount}</span>
+        <span className='counter'>{traveled}</span>
         <span className='link'>{data.link}</span>
       </div>
       <div className='right'>
