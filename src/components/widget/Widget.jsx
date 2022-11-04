@@ -1,6 +1,5 @@
 import React from 'react'
 import './Widget.scss'
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp'
 import PersonIcon from '@mui/icons-material/Person'
 import FlightTakeoffIcon from '@mui/icons-material/FlightTakeoff';
 import ApartmentIcon from '@mui/icons-material/Apartment';
@@ -15,7 +14,6 @@ export const Widget = ({ type }) => {
 
   // Temporary Data
   const traveled = 1000
-  const diff = 20
 
   switch (type) {
     case 'user':
@@ -27,8 +25,8 @@ export const Widget = ({ type }) => {
         <PersonIcon 
         className='icon' 
         style={{
-          backgroundColor: "rgba(255, 0, 0, 0.2)",
-          color: "crimson",
+          backgroundColor: "#349ce4",
+          color: "#354551",
         }}
         />),
       }
@@ -42,8 +40,8 @@ export const Widget = ({ type }) => {
         <FlightTakeoffIcon
         className='icon' 
         style={{
-          backgroundColor: "rgba(218, 165, 32, 0.2)",
-          color: "goldenrod",
+          backgroundColor: "#349ce4",
+          color: "#354551",
         }}
         />),
       }
@@ -57,8 +55,8 @@ export const Widget = ({ type }) => {
         <FlightLandIcon 
         className='icon' 
         style={{
-          backgroundColor: "rgba(0, 128, 0, 0.2)",
-          color: "green",
+          backgroundColor: "#349ce4",
+          color: "#354551",
         }}
         />),
       }
@@ -71,8 +69,8 @@ export const Widget = ({ type }) => {
         icon: (<ApartmentIcon
          className='icon' 
          style={{
-          backgroundColor: "rgba(128, 0, 128, 0.2)",
-          color: "purple",
+          backgroundColor: "#349ce4",
+          color: "#354551",
         }}
          />),
       }
@@ -91,10 +89,6 @@ export const Widget = ({ type }) => {
         <span className='link'>{data.link}</span>
       </div>
       <div className='right'>
-        <div className='percentage positive'>
-          <KeyboardArrowUpIcon />
-          {diff} %
-        </div>
         {data.icon}
       </div>
     </div>

@@ -29,7 +29,6 @@ const Sidebar = () => {
           <DashboardIcon className='icon'/>
             <span>Dashboard</span>
           </li>
-          <p className='title'> List</p>
           <li>
           <GroupIcon className='icon'/>
             <span>Users</span>
